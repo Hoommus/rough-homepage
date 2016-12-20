@@ -1,0 +1,80 @@
+body
+	font-size: 18px
+	font-family: "Libertation Serif", "Times New Roman", serif
+
+#header
+	font-size: 1.3em
+	width: 100%
+	background: lightgrey
+
+.white-overlay
+	display: none
+	height: 60px
+	z-index: 2
+	background: linear-gradient(to bottom, white, white 50%, transparent)
+	margin-bottom: -60px
+
+.site-name
+	vertical-align: middle
+	border: 1px solid grey
+	padding: 0
+	margin: 5px 0
+
+	div:nth-child(1),
+	div:nth-child(3)
+		background: white
+	@media only screen and (min-width: 320px) and (max-width: 480px) 
+		div:nth-child(1),
+		div:nth-child(3)
+			display: none !important
+	div:nth-child(2)
+		background: lightgrey
+	div
+		h1
+			font-weight: normal
+			line-height: 1em
+			display: inline-block
+			font-family: "DejaVu Sans Mono", "Lucida Console", "Ubuntu Mono", "Droid Sans Mono", "Courier New"
+			text-align: center
+			font-size: 3em
+			margin: 0
+
+		.number
+			padding: 0 10px
+			margin-right: 10px
+			display: inline-block
+			color: #4747d6
+			text-align: left
+		.number.second
+			background: #80b3e6
+		.number.first,
+		.number.third
+			background: #dfefff
+			h1:nth-child(2)
+				opacity: .8
+
+.current
+	font-weight: bold
+	font-style: italic
+
+.header-list 
+	padding: 5px 0
+	border-bottom: 1px dotted black
+	li
+		padding: 0 5px
+		list-style: none
+		display: inline-block
+		a
+			text-decoration: underline !important //Надо бы убрать
+			color: blue
+
+td 
+	border: 1px solid grey
+	padding: 5px 10px
+	font-size: 1.2em
+table
+	margin: 0 50px
+	caption
+		font-size: 1.3em
+		font-weight: bold
+		font-style: italic
